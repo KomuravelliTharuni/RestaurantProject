@@ -1,0 +1,118 @@
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* warm gradient background */
+    background: linear-gradient(120deg, #fff1e6, #ffe6cc);
+}
+
+/* ================= PAGE TITLE ================= */
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #d35400;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+/* ================= SECTION TITLES ================= */
+.section-title {
+    margin-top: 40px;
+    color: #2c3e50;
+    background-color: #ffe6b3; /* soft yellow */
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-size: 24px;
+}
+
+/* ================= MENU CONTAINER ================= */
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #fff8f0; /* light cream background */
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* ================= MENU CARDS ================= */
+.card {
+    background: linear-gradient(to bottom, #fff9f0, #fff1e6);
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ================= CARD IMAGES ================= */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #f39c12; /* golden accent under image */
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= CARD TEXT ================= */
+.card h3 {
+    margin: 10px 0 5px;
+    color: #d35400;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px;
+    color: #555;
+}
+
+/* ================= PRICE ================= */
+.price {
+    font-weight: bold;
+    color: #27ae60; /* greenish */
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* ================= BUTTON ================= */
+button {
+    margin: 10px;
+    padding: 10px 18px;
+    border: none;
+    background: linear-gradient(to right, #f39c12, #e67e22);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e67e22, #d35400);
+    transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
